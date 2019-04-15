@@ -1,4 +1,4 @@
-const Article = require('../models/articles')
+const Article = require('../models/article')
 
 module.exports = {
     getCreate: function(req, res) {
@@ -13,7 +13,7 @@ module.exports = {
       });
 
       article.save(function(err, dbArticle) {
-          res.redirect('/article')
+          res.redirect('/articles')
       });
     }
 };

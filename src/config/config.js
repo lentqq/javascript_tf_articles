@@ -1,6 +1,6 @@
 const config = {
-port: 300,
-dbRoute: 'mogodb: //localhost/articles'
+port: 3000,
+dbRoute: 'mongodb://localhost/articles'
 };
 
 module.exports = config;
