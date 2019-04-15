@@ -4,8 +4,9 @@ const exhbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const config = require('./config/config');
 const router = require('./config/router');
-
 const app = express();
+const dataBase = require('./config/dataBase');
+dataBase(config);
 
 app.engine('hbs', exhbs({
     defaultLayout: 'main',
