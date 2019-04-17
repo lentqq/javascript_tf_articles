@@ -10,9 +10,8 @@ function router(app) {
     app.post('/articles/create', articlesController.postCreate);
     
     
-    app.get('/articles', (req, res) => {
-        res.render('articles/index');
-    });
+    app.get('/articles', articlesController.index)
+       
 }
 
 module.exports = router;
