@@ -1,3 +1,11 @@
 body {
     background-color:lightblue;
 }
+
+.article-list {
+    display: flex;
+}
+
+.article-list .card {
+    justify-content: space-between;
+}
